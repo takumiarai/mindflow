@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			button {
+				height: 36px;
+				width: 120px;
+				border: 1px solid #212121;
+				border-radius: 4px;
+			}
+			body {
+				font-family: 'Lato', 'Roboto', sans-serif;
+				padding: 1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Focus App</h1>
+		<label for="focusLength">Pick a focus:</label>
+		<select name="focusLength" id="focusLength">
+		  <option value="25">Sprint Focus (25 min)</option>
+		  <option value="35">Steady Focus (35 min)</option>
+		  <option value="45">Deep Focus (45 min)</option>
+		</select> 
+		<button id="start_timer" onclick="startTimer(focusLength)">Start</button>
+	</body>
+</html>
